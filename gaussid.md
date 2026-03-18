@@ -64,9 +64,9 @@ Amazingly, the normalization constant $z_{c}$ is Gaussian in either $a$ or $b$:
 
 $$z_{c}=(2\pi)^{-d/2}|C|^{+1/2}|A|^{-1/2}|B|^{-1/2}\exp\left[-\frac{1}{2}(a^{T}A^{-1}a+b^{T}B^{-1}b-c^{T}C^{-1}c)\right]$$
 
-$$z_{c}(a)\sim\mathcal{N}((A^{-1}CA^{-1})^{-1}(A^{-1}CB^{-1})b,(A^{-1}CA^{-1})^{-1})$$
+$$z_{c}(a) \sim \mathcal{N}(b, A + B)$$
 
-$$z_{c}(b)\sim\mathcal{N}((B^{-1}CB^{-1})^{-1}(B^{-1}CA^{-1})a,(B^{-1}CB^{-1})^{-1})$$
+$$z_{c}(b) \sim \mathcal{N}(a, A + B)$$
 
 ### 0.5 Quadratic Forms
 The expectation of a quadratic form under a gaussian is another quadratic form (plus an annoying constant).
@@ -105,3 +105,4 @@ $$x = A\mu+AC\Lambda$$
 
 $$\Lambda=-(C^{T}AC)^{-1}C^{T}A\mu$$
 where the $j$th column of $C$ is $\partial c_{j}(x)/\partial x$
+
